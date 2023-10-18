@@ -20,5 +20,13 @@ e para checar o processo basta executar:
 ```bash
 bash check_progress.sh
 ```
+Se desejar executar o script automaticamente, basta configurar uma schedule com ``crontab`` ou derivados
 
-Se desejar executar automaticamente, basta configurar uma schedule com ``crontab`` ou derivados
+O script vai informar o status do processo e enviar para o arquivo ``status.txt``
+O status pode gerar 3 respostas:
+
+``DOWN`` -> Nenhum processo sendo verificado
+
+``RUNNING`` -> O processo está rodando
+
+``FINISHED`` -> O processo foi concluído ou terminado
